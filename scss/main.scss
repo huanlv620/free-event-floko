@@ -1,0 +1,37 @@
+@use "./reset";
+@use "./grid";
+@use "./base";
+@use "./header";
+@use "./hero";
+@use "./member";
+@use "./event";
+@use "./meet";
+@use "./schedule";
+@use "./ticket";
+@use "./slider";
+@use "./footer";
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  min-height: 100px;
+  margin-bottom: 30px;
+
+  background: green;
+
+  font-size: 30px;
+  font-weight: 600;
+}
+
+body {
+  background: #1d1d1d;
+}
+
+button {
+  &:hover {
+    opacity: 0.9;
+  }
+}

@@ -1,0 +1,109 @@
+.ticket {
+  margin-top: 150px;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__heading {
+    font-weight: 700;
+    font-size: 7.2rem;
+    line-height: 106%;
+    text-transform: capitalize;
+    color: #fff;
+  }
+
+  &__item {
+  }
+}
+
+.ticket-item {
+  margin-top: 82px;
+  border-radius: 18px;
+  background: #272727;
+
+  &__header {
+    padding: 26px 38px 29px;
+    background: #1d1d1d;
+    border: 1px solid #383838;
+
+    border-radius: 18px 18px 0px 0px;
+
+    &--premium {
+      background: #f36b7f;
+    }
+
+    &--enterprise {
+      background: #70d18c;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 3.6rem;
+    text-transform: capitalize;
+    color: #fff;
+  }
+
+  &__desc {
+    margin-top: 7px;
+    font-size: 1.6rem;
+    line-height: 162%;
+    color: #fff;
+    opacity: 0.8;
+  }
+
+  &__body {
+    padding: 74px 0 38px 38px;
+  }
+
+  &__list {
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    padding: 16px 0;
+    font-size: 1.6rem;
+    color: #e5e5e5;
+
+    &::before {
+      display: flex;
+      content: url("../imgs/subtract.svg");
+    }
+
+    &--premium:before {
+      content: url("../imgs/subtract-premium.svg");
+    }
+
+    &--enterprise:before {
+      content: url("../imgs/subtract-enterprise.svg");
+    }
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 302px;
+    padding: 12px 20px;
+    margin-top: 73px;
+    background: #1d1d1d;
+    border: 1px solid #383838;
+    border-radius: 54px;
+    font-weight: 600;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: #ffffff;
+    transition: background 0.3s;
+
+    &:hover {
+      background: #5162fe;
+    }
+  }
+}
