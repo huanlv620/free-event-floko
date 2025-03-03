@@ -1105,6 +1105,11 @@ textarea {
     font-size: 6.2rem;
   }
 }
+@media (max-width: 991.98px) {
+  .event__heading {
+    font-size: 4.2rem;
+  }
+}
 .event__sub-heading {
   margin: 38px 0 32px;
   font-weight: 600;

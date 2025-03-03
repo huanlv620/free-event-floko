@@ -16,6 +16,10 @@
     @include mixin.screen(lg) {
       font-size: 6.2rem;
     }
+
+    @include mixin.screen(lg) {
+      font-size: 4.2rem;
+    }
   }
   &__sub-heading {
     margin: 38px 0 32px;
