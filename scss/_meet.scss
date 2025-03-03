@@ -1,5 +1,10 @@
+@use "./mixin";
 .meet {
   margin-top: 150px;
+
+  @include mixin.screen(lg) {
+    margin-top: 50px;
+  }
 
   &__header {
     display: flex;
@@ -11,6 +16,14 @@
 
   &__heading {
     max-width: 680px;
+
+    @include mixin.screen(lg) {
+      font-size: 6.2rem;
+    }
+
+    @include mixin.screen(md) {
+      font-size: 4.2rem;
+    }
   }
 
   &__desc {
@@ -21,7 +34,19 @@
   }
 
   &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
     margin-top: 141px;
+
+    @include mixin.screen(lg) {
+      margin-top: 50px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include mixin.screen(md) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__info {

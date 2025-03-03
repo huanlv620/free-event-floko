@@ -1,10 +1,22 @@
+@use "./mixin";
 .event {
   margin-top: 150px;
 
   &__left {
     margin-top: 33px;
+
+    @include mixin.screen(xl) {
+      margin-bottom: 33px;
+    }
   }
 
+  &__heading {
+    max-width: 460px;
+
+    @include mixin.screen(lg) {
+      font-size: 6.2rem;
+    }
+  }
   &__sub-heading {
     margin: 38px 0 32px;
 
@@ -27,6 +39,10 @@
 
   &__right {
     position: relative;
+
+    @include mixin.screen(md) {
+      display: none;
+    }
   }
 
   &__img {

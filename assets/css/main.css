@@ -1092,6 +1092,19 @@ textarea {
 .event__left {
   margin-top: 33px;
 }
+@media (max-width: 1199.98px) {
+  .event__left {
+    margin-bottom: 33px;
+  }
+}
+.event__heading {
+  max-width: 460px;
+}
+@media (max-width: 991.98px) {
+  .event__heading {
+    font-size: 6.2rem;
+  }
+}
 .event__sub-heading {
   margin: 38px 0 32px;
   font-weight: 600;
@@ -1110,6 +1123,11 @@ textarea {
 }
 .event__right {
   position: relative;
+}
+@media (max-width: 767.98px) {
+  .event__right {
+    display: none;
+  }
 }
 .event__img {
   width: 570px;
@@ -1157,6 +1175,11 @@ textarea {
 .meet {
   margin-top: 150px;
 }
+@media (max-width: 991.98px) {
+  .meet {
+    margin-top: 50px;
+  }
+}
 .meet__header {
   display: flex;
   flex-direction: column;
@@ -1167,6 +1190,16 @@ textarea {
 .meet__heading {
   max-width: 680px;
 }
+@media (max-width: 991.98px) {
+  .meet__heading {
+    font-size: 6.2rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .meet__heading {
+    font-size: 4.2rem;
+  }
+}
 .meet__desc {
   max-width: 498px;
   font-size: 1.6rem;
@@ -1174,7 +1207,21 @@ textarea {
   color: #bfbfbf;
 }
 .meet__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
   margin-top: 141px;
+}
+@media (max-width: 991.98px) {
+  .meet__list {
+    margin-top: 50px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 767.98px) {
+  .meet__list {
+    grid-template-columns: 1fr;
+  }
 }
 .meet__info {
   position: absolute;
