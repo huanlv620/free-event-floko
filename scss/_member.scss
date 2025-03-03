@@ -1,11 +1,32 @@
+@use "./mixin";
 .member {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  flex-wrap: wrap;
   margin-top: 62px;
+
+  @include mixin.screen(xl) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include mixin.screen(lg) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 
   &__item {
     position: relative;
     width: 100%;
     height: 462px;
     border: 14px solid #99dfda;
+
+    @include mixin.screen(md) {
+      border-width: 5px;
+    }
+
+    @include mixin.screen(sm) {
+      border: 1px solid #ccc;
+    }
   }
 
   &__item:nth-last-of-type() {

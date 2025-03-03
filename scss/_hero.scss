@@ -1,3 +1,4 @@
+@use "./mixin";
 .hero {
   margin: 75px 0 62px;
 
@@ -22,6 +23,18 @@
     line-height: 115%;
     text-transform: capitalize;
     color: #fff;
+
+    @include mixin.screen(lg) {
+      font-size: 7.2rem;
+    }
+
+    @include mixin.screen(md) {
+      font-size: 5.2rem;
+    }
+
+    @include mixin.screen(sm) {
+      font-size: 3.2rem;
+    }
   }
 
   &__row {
@@ -43,6 +56,10 @@
     text-transform: uppercase;
     color: #fff;
 
+    @include mixin.screen(md) {
+      padding: 10px 20px;
+    }
+
     &--seat {
       background: #5162fe;
       border-color: #5162fe;
@@ -51,6 +68,9 @@
 }
 
 .hero-decor {
+  @include mixin.screen(xl) {
+    display: none;
+  }
   img {
     position: absolute;
 
