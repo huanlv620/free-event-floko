@@ -1,3 +1,5 @@
+@use "./mixin";
+
 .header {
   width: 1440px;
   margin-left: auto;
@@ -6,15 +8,42 @@
   padding: 20px 70px;
   border-bottom: 1px solid rgba(255 255 255 / 10%);
 
+  @include mixin.screen(lg) {
+    position: relative;
+  }
+
+  &__bar {
+    width: 24px;
+    height: 24px;
+    display: none;
+
+    @include mixin.screen(lg) {
+      display: block;
+    }
+  }
+
   &__row {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
+  &__logo {
+    @include mixin.screen(lg) {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
   &__list {
     display: flex;
     color: #fff;
+
+    @include mixin.screen(lg) {
+      display: none;
+    }
   }
 
   &__link {
@@ -41,12 +70,15 @@
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 130px;
-
     font-weight: 600;
     font-size: 1.6rem;
     line-height: 1;
     text-align: center;
     text-transform: uppercase;
     color: #ffffff;
+
+    @include mixin.screen(md) {
+      display: none;
+    }
   }
 }

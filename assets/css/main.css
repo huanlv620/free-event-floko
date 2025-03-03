@@ -800,14 +800,42 @@ textarea {
   padding: 20px 70px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
+@media (max-width: 991.98px) {
+  .header {
+    position: relative;
+  }
+}
+.header__bar {
+  width: 24px;
+  height: 24px;
+  display: none;
+}
+@media (max-width: 991.98px) {
+  .header__bar {
+    display: block;
+  }
+}
 .header__row {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 991.98px) {
+  .header__logo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
 .header__list {
   display: flex;
   color: #fff;
+}
+@media (max-width: 991.98px) {
+  .header__list {
+    display: none;
+  }
 }
 .header__link {
   padding: 18px;
@@ -836,6 +864,56 @@ textarea {
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
+}
+@media (max-width: 767.98px) {
+  .header__btn {
+    display: none;
+  }
+}
+
+.modal {
+  position: fixed;
+  z-index: 99;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity, visibility;
+  transition-duration: 0.3s;
+}
+.modal.show {
+  opacity: 1;
+  visibility: visible;
+}
+.modal__container {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  padding: 30px;
+  background: #292e39;
+  width: 70vw;
+  transform: translateX(-100%);
+  transition: transform 0.3s;
+}
+.modal.show .modal__container {
+  transform: translateX(0);
+}
+.modal__close {
+  width: 4rem;
+  height: 4rem;
+}
+.modal__content {
+  margin-top: 30px;
+}
+.modal__link {
+  display: block;
+  font-size: 2.6rem;
+  padding: 10px 0;
+  color: #fff;
+}
+.modal__link:hover {
+  text-decoration: underline;
 }
 
 .hero {
@@ -1494,24 +1572,16 @@ textarea {
   transform: translateY(-5px);
 }
 
-.inner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  min-height: 100px;
-  margin-bottom: 30px;
-  background: green;
-  font-size: 30px;
-  font-weight: 600;
-}
-
 body {
   background: #1d1d1d;
 }
 
 button:hover {
   opacity: 0.9;
+}
+
+footer {
+  display: none;
 }
 
 /*# sourceMappingURL=main.css.map */

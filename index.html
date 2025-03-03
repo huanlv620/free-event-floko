@@ -32,8 +32,17 @@
   <body>
     <header class="header">
       <div class="header__row">
+        <span class="header__bar">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+            <path
+              fill="#fff"
+              d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"
+            />
+          </svg>
+        </span>
         <!-- logo -->
-        <a href="#" class="logo">
+        <a href="#" class="logo header__logo">
           <svg
             width="120"
             height="26"
@@ -90,6 +99,43 @@
       </div>
     </header>
 
+    <div class="modal">
+      <div class="modal__container">
+        <button class="modal__close">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+            <path
+              fill="#fff"
+              d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"
+            />
+          </svg>
+        </button>
+
+        <div class="modal__content">
+          <!-- nav -->
+          <nav class="modal__nav">
+            <ul class="modal__list">
+              <li class="modal__item">
+                <a href="#" class="modal__link modal__link--active">Home</a>
+              </li>
+              <li class="modal__item">
+                <a href="#footer" class="modal__link">About</a>
+              </li>
+              <li class="modal__item">
+                <a href="#schedule" class="modal__link">Schedule</a>
+              </li>
+              <li class="modal__item">
+                <a href="#team" class="modal__link">Team</a>
+              </li>
+              <li class="modal__item">
+                <a href="#footer" class="modal__link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
     <!-- Main -->
     <main>
       <div class="container">
@@ -120,7 +166,7 @@
         </section>
 
         <!-- Section member -->
-        <section class="member">
+        <section class="member" style="display: none">
           <div class="row">
             <div class="col-lg-4 col-md-12">
               <article class="member__item">
@@ -174,7 +220,7 @@
         </section>
 
         <!-- Section event -->
-        <section id="about" class="event">
+        <section id="about" class="event" style="display: none">
           <div class="row">
             <!-- left -->
             <div class="col-lg-5 col-md-6">
@@ -231,7 +277,7 @@
         </section>
 
         <!-- Section 4 -->
-        <section class="meet">
+        <section class="meet" style="display: none">
           <div class="row">
             <div class="col">
               <div class="meet__header">
@@ -308,7 +354,7 @@
         </section>
 
         <!-- Section schedule -->
-        <section id="schedule" class="schedule">
+        <section id="schedule" class="schedule" style="display: none">
           <div class="row">
             <div class="col-lg-4 col-md-6">
               <div class="schedule__left">
@@ -413,7 +459,7 @@
         </section>
 
         <!-- Section tickets -->
-        <section class="ticket">
+        <section class="ticket" style="display: none">
           <!-- header -->
           <div class="row">
             <div class="col">
@@ -597,7 +643,7 @@
         </section>
 
         <!-- Section  -->
-        <section id="team" class="slider">
+        <section id="team" class="slider" style="display: none">
           <div class="slider__inner">
             <!-- item 1 -->
             <div class="slider-item">
@@ -835,5 +881,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./script.js"></script>
   </body>
 </html>
