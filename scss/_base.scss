@@ -50,3 +50,38 @@ input,
 textarea {
   background: transparent;
 }
+
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 1);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp.line-2 {
+  --line-clamp: 2;
+}
+
+.line-clamp.line-3 {
+  --line-clamp: 3;
+}
+
+.line-clamp.line-4 {
+  --line-clamp: 4;
+}
+
+.line-clamp.line-5 {
+  --line-clamp: 5;
+}
+
+.line-clamp.line-10 {
+  --line-clamp: 10;
+}
+
+.heading {
+  font-weight: 700;
+  font-size: 7.2rem;
+  line-height: 106%;
+  text-transform: capitalize;
+  color: #fff;
+}
