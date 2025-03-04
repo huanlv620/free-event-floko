@@ -1,3 +1,5 @@
+@use "./mixin";
+
 .footer {
   margin-top: 150px;
 
@@ -5,6 +7,10 @@
     font-weight: 600;
     font-size: 1.8rem;
     color: #fff;
+
+    @include mixin.screen(lg) {
+      margin-top: 50px;
+    }
   }
 
   &__list {
@@ -69,12 +75,19 @@
     margin-top: 77px;
     padding: 52px 0;
     border-top: 1px solid #bfbfbf;
+    @include mixin.screen(sm) {
+      justify-content: center;
+    }
   }
 
   &__copy {
     font-size: 1.6rem;
     color: #e5e5e5;
     user-select: none;
+
+    @include mixin.screen(sm) {
+      display: none;
+    }
   }
 
   &__media {
