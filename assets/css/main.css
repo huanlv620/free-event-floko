@@ -1180,11 +1180,6 @@ textarea {
 .meet {
   margin-top: 150px;
 }
-@media (max-width: 991.98px) {
-  .meet {
-    margin-top: 50px;
-  }
-}
 .meet__header {
   display: flex;
   flex-direction: column;
@@ -1287,6 +1282,16 @@ textarea {
 .schedule {
   padding-top: 150px;
 }
+@media (max-width: 991.98px) {
+  .schedule__left {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 991.98px) {
+  .schedule__heading {
+    font-size: 3.4rem;
+  }
+}
 .schedule__desc {
   margin: 20px 0 34px;
   width: 284px;
@@ -1303,6 +1308,16 @@ textarea {
   font-size: 1.6rem;
   text-transform: uppercase;
   color: #fff;
+}
+@media (max-width: 991.98px) {
+  .schedule__btn {
+    padding: 10px 20px;
+  }
+}
+@media (max-width: 991.98px) {
+  .schedule__right {
+    display: none;
+  }
 }
 
 .schudele-process__top {
@@ -1407,7 +1422,7 @@ textarea {
   color: #fff;
 }
 .schudele-process__desc {
-  width: 443px;
+  max-width: 443px;
   font-size: 1.4rem;
   line-height: 171%;
   color: #bfbfbf;
@@ -1424,6 +1439,31 @@ textarea {
 .ticket__heading {
   margin-bottom: 82px;
 }
+@media (max-width: 767.98px) {
+  .ticket__heading {
+    font-size: 6rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .ticket__heading {
+    font-size: 3.2rem;
+  }
+}
+.ticket__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+@media (max-width: 1199.98px) {
+  .ticket__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 767.98px) {
+  .ticket__list {
+    grid-template-columns: 1fr;
+  }
+}
 
 .ticket-item {
   display: flex;
@@ -1431,6 +1471,11 @@ textarea {
   height: 100%;
   border-radius: 18px;
   background: #272727;
+}
+@media (max-width: 991.98px) {
+  .ticket-item {
+    margin-top: 30px;
+  }
 }
 .ticket-item__header {
   padding: 26px 38px 29px;
@@ -1523,6 +1568,11 @@ textarea {
   height: 390px;
   border-radius: 18px;
   overflow: hidden;
+}
+@media (max-width: 991.98px) {
+  .slider__img-wrap {
+    display: none;
+  }
 }
 .slider__img {
   width: 100%;

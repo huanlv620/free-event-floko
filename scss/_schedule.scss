@@ -1,5 +1,18 @@
+@use "./mixin";
 .schedule {
   padding-top: 150px;
+
+  &__left {
+    @include mixin.screen(lg) {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__heading {
+    @include mixin.screen(lg) {
+      font-size: 3.4rem;
+    }
+  }
 
   &__desc {
     margin: 20px 0 34px;
@@ -19,6 +32,16 @@
     font-size: 1.6rem;
     text-transform: uppercase;
     color: #fff;
+
+    @include mixin.screen(lg) {
+      padding: 10px 20px;
+    }
+  }
+
+  &__right {
+    @include mixin.screen(lg) {
+      display: none;
+    }
   }
 }
 
@@ -141,7 +164,7 @@
   }
 
   &__desc {
-    width: 443px;
+    max-width: 443px;
     font-size: 1.4rem;
     line-height: 171%;
     color: #bfbfbf;

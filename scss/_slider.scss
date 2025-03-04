@@ -1,3 +1,5 @@
+@use "./mixin";
+
 .slider {
   margin-top: 150px;
   padding: 90px 0;
@@ -19,6 +21,10 @@
     height: 390px;
     border-radius: 18px;
     overflow: hidden;
+
+    @include mixin.screen(lg) {
+      display: none;
+    }
   }
 
   &__img {

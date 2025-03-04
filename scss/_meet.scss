@@ -2,10 +2,6 @@
 .meet {
   margin-top: 150px;
 
-  @include mixin.screen(lg) {
-    margin-top: 50px;
-  }
-
   &__header {
     display: flex;
     flex-direction: column;
