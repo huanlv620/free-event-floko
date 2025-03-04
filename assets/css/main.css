@@ -896,15 +896,15 @@ textarea {
   transform: translateX(0);
 }
 .modal__close {
-  width: 4rem;
-  height: 4rem;
+  width: 24px;
+  height: 24px;
 }
 .modal__content {
   margin-top: 30px;
 }
 .modal__link {
   display: block;
-  font-size: 2.6rem;
+  font-size: 1.6rem;
   padding: 10px 0;
   color: #fff;
 }
@@ -926,6 +926,11 @@ textarea {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+@media (max-width: 575.98px) {
+  .hero__desc {
+    font-size: 1.4rem;
+  }
+}
 .hero__heading {
   margin: 8px 0 44px;
   font-weight: 800;
@@ -946,7 +951,7 @@ textarea {
 }
 @media (max-width: 575.98px) {
   .hero__heading {
-    font-size: 3.2rem;
+    font-size: 2.2rem;
   }
 }
 .hero__row {
@@ -968,6 +973,11 @@ textarea {
 @media (max-width: 767.98px) {
   .hero__btn {
     padding: 10px 20px;
+  }
+}
+@media (max-width: 575.98px) {
+  .hero__btn {
+    font-size: 1.4rem;
   }
 }
 .hero__btn--seat {
@@ -1089,6 +1099,11 @@ textarea {
 .event {
   margin-top: 150px;
 }
+@media (max-width: 767.98px) {
+  .event {
+    margin-top: 50px;
+  }
+}
 .event__left {
   margin-top: 33px;
 }
@@ -1110,12 +1125,23 @@ textarea {
     font-size: 4.2rem;
   }
 }
+@media (max-width: 767.98px) {
+  .event__heading {
+    font-size: 2.2rem;
+    text-align: left;
+  }
+}
 .event__sub-heading {
   margin: 38px 0 32px;
   font-weight: 600;
   font-size: 2rem;
   line-height: 1;
   color: #fff;
+}
+@media (max-width: 767.98px) {
+  .event__sub-heading {
+    margin: 19px 0 32px;
+  }
 }
 .event__desc {
   font-size: 1.6rem;
@@ -1180,12 +1206,22 @@ textarea {
 .meet {
   margin-top: 150px;
 }
+@media (max-width: 767.98px) {
+  .meet {
+    margin-top: 50px;
+  }
+}
 .meet__header {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   gap: 20px;
+}
+@media (max-width: 575.98px) {
+  .meet__header {
+    align-items: initial;
+  }
 }
 .meet__heading {
   max-width: 680px;
@@ -1200,11 +1236,22 @@ textarea {
     font-size: 4.2rem;
   }
 }
+@media (max-width: 575.98px) {
+  .meet__heading {
+    text-align: left;
+    font-size: 2.2rem;
+  }
+}
 .meet__desc {
   max-width: 498px;
   font-size: 1.6rem;
   line-height: 162%;
   color: #bfbfbf;
+}
+@media (max-width: 575.98px) {
+  .meet__desc {
+    text-align: left;
+  }
 }
 .meet__list {
   display: grid;
@@ -1236,13 +1283,6 @@ textarea {
   line-height: 1;
   text-align: center;
   color: #fff;
-}
-.meet__desc {
-  margin: 12px auto 24px;
-  font-size: 1.6rem;
-  line-height: 162%;
-  text-align: center;
-  color: #bfbfbf;
 }
 
 .meet-item {
@@ -1282,14 +1322,24 @@ textarea {
 .schedule {
   padding-top: 150px;
 }
+@media (max-width: 767.98px) {
+  .schedule {
+    padding-top: 50px;
+  }
+}
 @media (max-width: 991.98px) {
   .schedule__left {
     margin-bottom: 50px;
   }
 }
-@media (max-width: 991.98px) {
+@media (max-width: 767.98px) {
   .schedule__heading {
-    font-size: 3.4rem;
+    font-size: 5.2rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .schedule__heading {
+    font-size: 2.2rem;
   }
 }
 .schedule__desc {
@@ -1431,10 +1481,20 @@ textarea {
 .ticket {
   margin-top: 150px;
 }
+@media (max-width: 575.98px) {
+  .ticket {
+    margin-top: 30px;
+  }
+}
 .ticket__inner {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media (max-width: 575.98px) {
+  .ticket__inner {
+    justify-content: flex-start;
+  }
 }
 .ticket__heading {
   margin-bottom: 82px;
@@ -1442,11 +1502,13 @@ textarea {
 @media (max-width: 767.98px) {
   .ticket__heading {
     font-size: 6rem;
+    margin-bottom: 42px;
   }
 }
 @media (max-width: 575.98px) {
   .ticket__heading {
-    font-size: 3.2rem;
+    font-size: 2.2rem;
+    margin-bottom: 22px;
   }
 }
 .ticket__list {
@@ -1556,6 +1618,11 @@ textarea {
   background: #272727;
   border-radius: 18px;
 }
+@media (max-width: 767.98px) {
+  .slider {
+    margin-top: 70px;
+  }
+}
 .slider__inner {
   overflow: hidden;
   display: flex;
@@ -1630,6 +1697,11 @@ textarea {
 
 .footer {
   margin-top: 150px;
+}
+@media (max-width: 767.98px) {
+  .footer {
+    margin-top: 70px;
+  }
 }
 .footer__heading {
   font-weight: 600;

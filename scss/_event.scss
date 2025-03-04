@@ -2,6 +2,10 @@
 .event {
   margin-top: 150px;
 
+  @include mixin.screen(md) {
+    margin-top: 50px;
+  }
+
   &__left {
     margin-top: 33px;
 
@@ -20,14 +24,22 @@
     @include mixin.screen(lg) {
       font-size: 4.2rem;
     }
+
+    @include mixin.screen(md) {
+      font-size: 2.2rem;
+      text-align: left;
+    }
   }
   &__sub-heading {
     margin: 38px 0 32px;
-
     font-weight: 600;
     font-size: 2rem;
     line-height: 1;
     color: #fff;
+
+    @include mixin.screen(md) {
+      margin: 19px 0 32px;
+    }
   }
 
   &__desc {
@@ -35,6 +47,11 @@
     line-height: 162%;
     color: #bfbfbf;
     max-width: 499px;
+
+    @include mixin.screen(md) {
+      // width: initial;
+      // text-align: center;
+    }
   }
 
   &__desc + &__desc {

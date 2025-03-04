@@ -7,6 +7,10 @@
   background: #272727;
   border-radius: 18px;
 
+  @include mixin.screen(md) {
+    margin-top: 70px;
+  }
+
   &__inner {
     overflow: hidden;
     display: flex;

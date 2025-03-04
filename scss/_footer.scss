@@ -3,6 +3,10 @@
 .footer {
   margin-top: 150px;
 
+  @include mixin.screen(md) {
+    margin-top: 70px;
+  }
+
   &__heading {
     font-weight: 600;
     font-size: 1.8rem;

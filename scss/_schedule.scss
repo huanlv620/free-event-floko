@@ -2,6 +2,9 @@
 .schedule {
   padding-top: 150px;
 
+  @include mixin.screen(md) {
+    padding-top: 50px;
+  }
   &__left {
     @include mixin.screen(lg) {
       margin-bottom: 50px;
@@ -9,8 +12,11 @@
   }
 
   &__heading {
-    @include mixin.screen(lg) {
-      font-size: 3.4rem;
+    @include mixin.screen(md) {
+      font-size: 5.2rem;
+    }
+    @include mixin.screen(md) {
+      font-size: 2.2rem;
     }
   }
 

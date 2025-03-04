@@ -2,20 +2,31 @@
 .ticket {
   margin-top: 150px;
 
+  @include mixin.screen(sm) {
+    margin-top: 30px;
+  }
+
   &__inner {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @include mixin.screen(sm) {
+      justify-content: flex-start;
+    }
   }
+
   &__heading {
     margin-bottom: 82px;
 
     @include mixin.screen(md) {
       font-size: 6rem;
+      margin-bottom: 42px;
     }
 
     @include mixin.screen(sm) {
-      font-size: 3.2rem;
+      font-size: 2.2rem;
+      margin-bottom: 22px;
     }
   }
 
