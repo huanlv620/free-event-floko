@@ -6,12 +6,13 @@
   flex-wrap: wrap;
   margin-top: 62px;
 
-  @include mixin.screen(xl) {
+  @include mixin.screen(lg) {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  @include mixin.screen(lg) {
-    grid-template-columns: repeat(1, 1fr);
+  @include mixin.screen(md) {
+    grid-template-columns: 1fr;
+    gap: 18px;
   }
 
   &__item {

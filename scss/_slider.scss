@@ -50,6 +50,10 @@
     font-weight: 700;
     font-size: 2.8rem;
     color: #fff;
+
+    @include mixin.screen(sm) {
+      font-size: 3.8rem;
+    }
   }
 
   &__sub-heading {
@@ -57,6 +61,10 @@
     font-weight: 500;
     font-size: 1.6rem;
     color: #bfbfbf;
+
+    @include mixin.screen(sm) {
+      font-size: 1.8rem;
+    }
   }
 
   &__desc {
@@ -67,6 +75,10 @@
     line-height: 162%;
     color: #f0f0f0;
     border-top: 0.8px solid #bfbfbf;
+
+    @include mixin.screen(sm) {
+      text-align: justify;
+    }
   }
 
   &__control {

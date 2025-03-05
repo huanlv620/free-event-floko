@@ -7,6 +7,10 @@
     margin-top: 70px;
   }
 
+  // @include mixin.screen(sm) {
+  //   font-size: 1.4rem;
+  // }
+
   &__heading {
     font-weight: 600;
     font-size: 1.8rem;
@@ -14,6 +18,10 @@
 
     @include mixin.screen(lg) {
       margin-top: 50px;
+    }
+
+    @include mixin.screen(sm) {
+      margin-top: 30px;
     }
   }
 
@@ -26,6 +34,10 @@
     font-size: 1.6rem;
     color: #bfbfbf;
     padding: 10px 0;
+
+    @include mixin.screen(sm) {
+      font-size: 1.4rem;
+    }
 
     &:hover {
       opacity: 0.8;

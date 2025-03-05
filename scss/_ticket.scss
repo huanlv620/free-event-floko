@@ -2,6 +2,10 @@
 .ticket {
   margin-top: 150px;
 
+  @include mixin.screen(lg) {
+    margin-top: 30px;
+  }
+
   @include mixin.screen(sm) {
     margin-top: 30px;
   }
@@ -11,7 +15,7 @@
     align-items: center;
     justify-content: center;
 
-    @include mixin.screen(sm) {
+    @include mixin.screen(lg) {
       justify-content: flex-start;
     }
   }
@@ -25,7 +29,7 @@
     }
 
     @include mixin.screen(sm) {
-      font-size: 2.2rem;
+      font-size: 3.8rem;
       margin-bottom: 22px;
     }
   }

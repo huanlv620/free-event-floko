@@ -3,7 +3,11 @@
   margin-top: 150px;
 
   @include mixin.screen(md) {
-    margin-top: 50px;
+    margin-top: 75px;
+  }
+
+  @include mixin.screen(sm) {
+    margin-top: 38px;
   }
 
   &__header {
@@ -12,6 +16,11 @@
     align-items: center;
     text-align: center;
     gap: 20px;
+
+    @include mixin.screen(lg) {
+      align-items: flex-start;
+      text-align: left;
+    }
 
     @include mixin.screen(sm) {
       align-items: initial;
@@ -26,12 +35,7 @@
     }
 
     @include mixin.screen(md) {
-      font-size: 4.2rem;
-    }
-
-    @include mixin.screen(sm) {
-      text-align: left;
-      font-size: 2.2rem;
+      font-size: 3.6rem;
     }
   }
 
@@ -42,7 +46,7 @@
     color: #bfbfbf;
 
     @include mixin.screen(sm) {
-      text-align: left;
+      font-size: 1.4rem;
     }
   }
 
@@ -67,19 +71,22 @@
     left: 0;
     right: 0;
     bottom: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
 
     background: linear-gradient(
       180deg,
       rgba(29, 29, 29, 0) 20.38%,
       #1d1d1d 104.37%
     );
+    text-align: center;
   }
 
   &__name {
     font-weight: 700;
     font-size: 2.8rem;
     line-height: 1;
-    text-align: center;
     color: #fff;
   }
 }

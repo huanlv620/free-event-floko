@@ -2,8 +2,12 @@
 .event {
   margin-top: 150px;
 
-  @include mixin.screen(md) {
-    margin-top: 50px;
+  @include mixin.screen(xl) {
+    margin-top: 75px;
+  }
+
+  @include mixin.screen(sm) {
+    margin-top: 38px;
   }
 
   &__left {
@@ -17,19 +21,12 @@
   &__heading {
     max-width: 460px;
 
-    @include mixin.screen(lg) {
-      font-size: 6.2rem;
-    }
-
-    @include mixin.screen(lg) {
-      font-size: 4.2rem;
-    }
-
     @include mixin.screen(md) {
-      font-size: 2.2rem;
+      font-size: 3.6rem;
       text-align: left;
     }
   }
+
   &__sub-heading {
     margin: 38px 0 32px;
     font-weight: 600;
@@ -39,6 +36,7 @@
 
     @include mixin.screen(md) {
       margin: 19px 0 32px;
+      font-size: 1.6rem;
     }
   }
 
@@ -49,8 +47,7 @@
     max-width: 499px;
 
     @include mixin.screen(md) {
-      // width: initial;
-      // text-align: center;
+      font-size: 1.4rem;
     }
   }
 
@@ -60,9 +57,14 @@
 
   &__right {
     position: relative;
+    width: 100%;
 
     @include mixin.screen(md) {
       display: none;
+    }
+
+    @include mixin.screen(xl) {
+      width: 100%;
     }
   }
 
@@ -71,6 +73,10 @@
     height: 505px;
     border-radius: 18px;
     overflow: hidden;
+
+    @include mixin.screen(xl) {
+      width: 100%;
+    }
 
     img {
       width: 100%;
